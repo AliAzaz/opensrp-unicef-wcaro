@@ -29,6 +29,7 @@ import org.smartgresiter.wcaro.util.OnClickFloatingMenu;
 import org.smartregister.clientandeventmodel.Client;
 import org.smartregister.clientandeventmodel.Event;
 import org.smartregister.domain.FetchStatus;
+import org.smartgresiter.wcaro.util.NavigationHelper;
 import org.smartregister.family.activity.BaseFamilyProfileActivity;
 import org.smartregister.family.adapter.ViewPagerAdapter;
 import org.smartregister.family.fragment.BaseFamilyProfileActivityFragment;
@@ -216,6 +217,12 @@ public class FamilyProfileActivity extends BaseFamilyProfileActivity implements 
 
     @Override
     public void onRegistrationSaved(boolean isEdit) {
-
+        hideProgressDialog();
     }
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        NavigationHelper.getInstance(this, null, null);
+//    }
+
 }
